@@ -1,0 +1,4 @@
+2021-08-10 20:56:19,212 INFO     Python verstion 2.7.16
+2021-08-10 20:56:19,212 INFO     Executing Spirent Network Emulator __init__
+2021-08-10 20:56:19,212 INFO     URL : http://10.140.96.99/api
+2021-08-10 20:56:19,212 INFO     Authorizing SNE_IP :10.140.96.99 username :pwari password :

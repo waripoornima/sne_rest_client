@@ -7,7 +7,7 @@ except ImportError:
 
 def main():
     setup(
-        name='sne_rest_client',
+        name='py_sne_rest_client',
         version= '0.1',
         author='PoornimaWari',
         author_email='poornima.wari@spirent.com',
