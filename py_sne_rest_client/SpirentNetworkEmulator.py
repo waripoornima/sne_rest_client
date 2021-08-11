@@ -336,11 +336,10 @@ class SpirentNetworkEmulator:
         if not raw_response.ok:
             # ERROR handling
             try :
-                content = raw_response.content
                 raw_response.raise_for_status()
             except Exception as error_massage:
                 error_content = raw_response.content
-                logging.critical(error_massage + ' ' + error_content)
+                logging.critical(str(error_massage) + ' ' + str(error_content))
                 raise requests.HTTPError(error_massage, error_content)
 
         # process the response
@@ -359,7 +358,7 @@ class SpirentNetworkEmulator:
 def main():
     #rest_client = SpirentNetworkEmulator('10.140.96.99', 'pwari', log_path='/Users/pwari/workspace',log_level='debug')
     rest_client = SpirentNetworkEmulator('10.140.96.99', 'pwari')
-    response = rest_client.get('instrument/software/buildversion')
+    response = rest_client.get('instrument//software/buildversion')
     return response
 
 if __name__ == "__main__":

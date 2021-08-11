@@ -9,8 +9,9 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install Spirent
 Rerun this command to check for and install  updates .
 
 ```bash
-pip install sne_rest_client # python2
-pip3 install sne_rest_client # python3
+
+pip install py_sne_rest_client # python2
+python3 -m pip install py_sne_rest_client # python3
 
 ```
 

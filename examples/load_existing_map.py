@@ -5,10 +5,7 @@
 
 import sys
 import time
-
-# loading SNE path
-sys.path.insert(0,'/Users/pwari/workspace/sne_rest_client/py_sne_rest_client')
-from SpirentNetworkEmulator import SpirentNetworkEmulator
+from py_sne_rest_client.SpirentNetworkEmulator import SpirentNetworkEmulator
 
 # initialize SNE credentials
 sne_ip = '10.140.96.99'

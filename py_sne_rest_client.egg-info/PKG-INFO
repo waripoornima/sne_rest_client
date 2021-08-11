@@ -8,8 +8,6 @@ Author-email: poornima.wari@spirent.com
 License: http://www.opensource.org/licenses/mit-license.php
 Keywords: Spirent Network Emulator API
 Platform: UNKNOWN
-Classifier: Development Status :: 1 - Production/Stable
-Classifier: Intended Audience :: Developers
 Classifier: License :: OSI Approved :: MIT License
 Classifier: Operating System :: POSIX
 Classifier: Operating System :: Microsoft :: Windows

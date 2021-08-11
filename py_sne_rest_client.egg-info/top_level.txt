@@ -1,1 +1,1 @@
-sne_rest_client
+py_sne_rest_client
