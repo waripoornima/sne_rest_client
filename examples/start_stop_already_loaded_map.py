@@ -34,8 +34,8 @@ for map in map_list:
     if map['mapName'] == map_name:
         map_id = map['mapId']
     else:
-        print('map name %s doesnt exist :', map_name)
-        raise ValueError('map name %s doesnt exist :', map_name)
+        print(f'map name {map_name} doesnt exist')
+        raise ValueError(f'map name {map_name} doesnt exist')
 
 # start the map
 # Note the map needs to be loaded already
