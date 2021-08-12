@@ -12,6 +12,9 @@ __Author__ = 'Poornima Wari'
  '    ----------------------\n'
  '    Modification History\n'
  '    --------------------\n'
+ '    0.2 : 8/12/2021 Poornima Wari\n'
+ '          - updated error message with http error content\n'
+ '                                 \n '     
  '    0.1 : 5/5/2021 Poornima Wari\n'
  '          - Initial Code\n'
  '           \n'
@@ -358,7 +361,7 @@ class SpirentNetworkEmulator:
 def main():
     #rest_client = SpirentNetworkEmulator('10.140.96.99', 'pwari', log_path='/Users/pwari/workspace',log_level='debug')
     rest_client = SpirentNetworkEmulator('10.140.96.99', 'pwari')
-    response = rest_client.get('instrument//software/buildversion')
+    response = rest_client.get('instrument/software/buildversion')
     return response
 
 if __name__ == "__main__":
