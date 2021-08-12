@@ -31,8 +31,8 @@ for map in map_list:
     if map['mapName'] == map_name:
         map_id = map['mapId']
     else:
-        print('map name %s doesnt exist :', map_name)
-        raise ValueError('map name %s doesnt exist :',map_name)
+        print(f'map name {map_name} doesnt exist ')
+        raise ValueError(f'map name {map_name} doesnt exist ')
 
 # load the map
 print('loading the map')
@@ -62,9 +62,8 @@ response = sne.get('/maps/'+map_id+'/impairments/'+impairment_id+'/packetdrop')
 print(response['packetDrop']['packetDropSettings'])
 
 # get the stats
-print('getting stats')
 response = sne.get('/maps/'+map_id+'/stats')
-print('Stats ')
+print('Stats :')
 print(response)
 print('')
 
