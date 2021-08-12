@@ -4,7 +4,7 @@
 """
 
 
-__Version_ = '0.1'
+__Version_ = '0.2'
 __Author__ = 'Poornima Wari'
 
 
