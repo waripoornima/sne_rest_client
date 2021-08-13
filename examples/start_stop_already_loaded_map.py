@@ -33,9 +33,10 @@ map_id = ''
 for map in map_list:
     if map['mapName'] == map_name:
         map_id = map['mapId']
-    else:
-        print(f'map name {map_name} doesnt exist')
-        raise ValueError(f'map name {map_name} doesnt exist')
+
+if not map_id:
+    print('map name doesnt exist', map_name)
+    raise ValueError('map name doesnt exist', map_name)
 
 # start the map
 # Note the map needs to be loaded already
@@ -51,4 +52,4 @@ print('stopping the map')
 response = sne.put('/maps/' + map_id + '/stop')
 print(response)
 
-print('Done')
+print('Done !')

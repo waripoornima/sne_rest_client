@@ -17,7 +17,7 @@ print('loading Spirent network emulator ReSt Client ')
 sne = SpirentNetworkEmulator(sne_ip, username)
 
 # get the SNE version
-sne_version = sne.get( '/instrument/software/buildversion')
+sne_version = sne.get('/instrument/software/buildversion')
 print('SNE Version : ', sne_version)
 
 # get the list of existing maps
@@ -30,9 +30,10 @@ map_id = ''
 for map in map_list:
     if map['mapName'] == map_name:
         map_id = map['mapId']
-    else:
-        print(f'map name {map_name} doesnt exist ')
-        raise ValueError(f'map name {map_name} doesnt exist ')
+
+if not map_id:
+   print('map name doesnt exist ',map_name)
+   raise ValueError('map name doesnt exist ',map_name)
 
 # load the map
 print('loading the map')
@@ -77,4 +78,4 @@ print('unloading the map')
 response = sne.put('/maps/' + map_id + '/unload')
 print(response)
 
-print('Done')
+print('Done !')
