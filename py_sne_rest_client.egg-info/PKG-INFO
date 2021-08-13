@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: py-sne-rest-client
-Version: 0.1
+Version: 0.2
 Summary: sne_rest_client: Front end for SPirent Network Emulator ReST API
 Home-page: https://github.com/waripoornima/sne_rest_client
 Author: PoornimaWari
